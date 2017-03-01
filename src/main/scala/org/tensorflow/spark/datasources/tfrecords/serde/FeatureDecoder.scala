@@ -13,9 +13,10 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-package org.trustedanalytics.spark.datasources.tensorflow.serde
+package org.tensorflow.spark.datasources.tfrecords.serde
 
 import org.tensorflow.example.Feature
+
 import scala.collection.JavaConverters._
 
 trait FeatureDecoder[T] {

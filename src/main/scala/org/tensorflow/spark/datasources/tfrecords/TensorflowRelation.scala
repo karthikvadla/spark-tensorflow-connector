@@ -13,7 +13,7 @@
   * See the License for the specific language governing permissions and
   * limitations under the License.
   */
-package org.trustedanalytics.spark.datasources.tensorflow
+package org.tensorflow.spark.datasources.tfrecords
 
 import org.apache.hadoop.io.{BytesWritable, NullWritable}
 import org.apache.spark.rdd.RDD
@@ -22,7 +22,7 @@ import org.apache.spark.sql.types.StructType
 import org.apache.spark.sql.{Row, SQLContext, SparkSession}
 import org.tensorflow.example.Example
 import org.tensorflow.hadoop.io.TFRecordFileInputFormat
-import org.trustedanalytics.spark.datasources.tensorflow.serde.DefaultTfRecordRowDecoder
+import org.tensorflow.spark.datasources.tfrecords.serde.DefaultTfRecordRowDecoder
 
 
 case class TensorflowRelation(options: Map[String, String], customSchema: Option[StructType]=None)(@transient val session: SparkSession) extends BaseRelation with TableScan {

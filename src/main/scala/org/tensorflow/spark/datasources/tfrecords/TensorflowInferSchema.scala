@@ -13,14 +13,15 @@
   * See the License for the specific language governing permissions and
   * limitations under the License.
   */
-package org.trustedanalytics.spark.datasources.tensorflow
+package org.tensorflow.spark.datasources.tfrecords
 
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.types._
 import org.tensorflow.example.{Example, Feature}
+
+import scala.collection.JavaConverters._
 import scala.collection.mutable.Map
 import scala.util.control.Exception._
-import scala.collection.JavaConverters._
 
 object TensorflowInferSchema {
 

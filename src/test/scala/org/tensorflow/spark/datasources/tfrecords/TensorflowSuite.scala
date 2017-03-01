@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.trustedanalytics.spark.datasources.tensorflow
+package org.tensorflow.spark.datasources.tfrecords
 
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.catalyst.expressions.{GenericRow, GenericRowWithSchema}
@@ -22,7 +22,8 @@ import org.apache.spark.sql.types._
 import org.apache.spark.sql.{DataFrame, Row}
 import org.tensorflow.example._
 import org.tensorflow.hadoop.shaded.protobuf.ByteString
-import org.trustedanalytics.spark.datasources.tensorflow.serde.{DefaultTfRecordRowDecoder, DefaultTfRecordRowEncoder}
+import org.tensorflow.spark.datasources.tfrecords.serde.{DefaultTfRecordRowDecoder, DefaultTfRecordRowEncoder}
+
 import scala.collection.JavaConverters._
 
 class TensorflowSuite extends SharedSparkSessionSuite {

@@ -13,9 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.trustedanalytics.spark.datasources.tensorflow.serde
+package org.tensorflow.spark.datasources.tfrecords.serde
 
 import org.scalatest.{Matchers, WordSpec}
+
 import scala.collection.JavaConverters._
 
 class FeatureEncoderTest extends WordSpec with Matchers {

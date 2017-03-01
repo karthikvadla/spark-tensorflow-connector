@@ -13,10 +13,10 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-package org.trustedanalytics.spark.datasources.tensorflow.serde
+package org.tensorflow.spark.datasources.tfrecords.serde
 
 import org.scalatest.{Matchers, WordSpec}
-import org.tensorflow.example.{BytesList, FloatList, Feature, Int64List}
+import org.tensorflow.example.{BytesList, Feature, FloatList, Int64List}
 import org.tensorflow.hadoop.shaded.protobuf.ByteString
 
 class FeatureDecoderTest extends WordSpec with Matchers {

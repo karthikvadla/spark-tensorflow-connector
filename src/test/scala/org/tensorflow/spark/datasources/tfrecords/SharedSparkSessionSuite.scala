@@ -14,7 +14,7 @@
  *  limitations under the License.
  */
 
-package org.trustedanalytics.spark.datasources.tensorflow
+package org.tensorflow.spark.datasources.tfrecords
 
 import java.io.File
 

@@ -1,4 +1,4 @@
-package org.trustedanalytics.spark.datasources.tensorflow
+package org.tensorflow.spark.datasources.tfrecords
 
 /**
  * DataTypes supported
